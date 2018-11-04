@@ -1,16 +1,21 @@
 const express = require('express')
 const app = express()
+const axios = require('axios')
 
-const resolver = (request, response) => {
-    response.send('Olá Fullstack Lab')
-}
+app.set('view engine', 'ejs')
 
-app.get('/', resolver)
+const port = process.env.PORT || 3000
 
-app.listen(3000, (err) => {
+app.get('/', async(request, response) => {
+    const content = await axios.get('https://como-fazer-wesgtox.firebaseio.com/teste.json')
+    console.log(content.data)
+    response.render('index', { i: content.data })
+})
+
+app.listen(port, (err) => {
     if(err) {
         console.log('error')
     } else {
-        console.log('Como-Fazer Server is running...')
+        console.log('Como-Fazer Server is running on port:', port)
     }
 })
