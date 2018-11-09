@@ -1,10 +1,10 @@
-<!-- <p align="center">
+<p align="center">
    <a href="https://github.com/WesGtoX/como-fazer">
-     <img src="#" alt="Como Fazer" title="Como Fazer" width="500px">
+     <img src="public/img/logo.svg" alt="Como Fazer" title="Como Fazer" width="500px">
    </a>
 </p>
 
------------------ -->
+-----------------
 
 # Como Fazer
 
