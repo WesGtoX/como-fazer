@@ -4,7 +4,7 @@
     "www.como-fazer.wesleymends.com.br"
   ],
   "env": {
-    "DB_URL": "@DB_URL",
-    "DB_PASS": "@DB_PASS"
+    "DB_URL": "@my-app-db-url",
+    "DB_PASS": "@my-app-db-pass"
   }
 }
