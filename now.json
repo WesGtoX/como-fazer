@@ -1,1 +1,7 @@
-{}
+{
+  "alias": "como-fazer.wesleymends.com.br",
+  "version": 2,
+  "builds": [
+    { "src": "index.js", "use": "@now/node" }
+  ]
+}

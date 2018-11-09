@@ -1,6 +1,8 @@
 const axios = require('axios')
-const baseURL = 'https://como-fazer-wesgtox.firebaseio.com/'
-const auth = 'wvKd6uTjs8fBPpx6NonlPkAeiZq2DZjafkBOSd2x'
+require('dotenv').config()
+
+const baseURL = process.env.DB_URL
+const auth = process.env.DB_PASS
 
 // List
 const list = async(key) => {
