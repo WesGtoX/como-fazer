@@ -6,6 +6,10 @@ html {
 body {
 	margin-bottom: 60px;		/* Margin bottom by footer height */
 }
+
+.bg-light {
+    background-color: #93B874!important;
+}
   
 /* FOOTER */
 footer {
