@@ -6,7 +6,9 @@ const categorias = require('./routes/categorias')
 const publicacoes = require('./routes/publicacoes')
 
 app.set('view engine', 'ejs')
-app.use(bodyParser.urlencoded())
+app.use(bodyParser.urlencoded({
+    extended: true
+}))
 
 const port = process.env.PORT || 3000
 

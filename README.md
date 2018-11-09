@@ -8,7 +8,7 @@
 
 # Como Fazer
 
-Application based on wikiHow.
+Application based on WikiHow.
 
 Made in the Fullstack Lab course by [Tulio Faria](https://github.com/tuliofaria)
 
