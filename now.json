@@ -3,5 +3,8 @@
     "como-fazer.wesleymends.com.br", 
     "www.como-fazer.wesleymends.com.br"
   ],
-  "dotenv": ".env"
+  "env": {
+    "DB_URL": "@DB_URL",
+    "DB_PASS": "@DB_PASS"
+  }
 }
