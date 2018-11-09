@@ -1,0 +1,29 @@
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+	margin-bottom: 60px;		/* Margin bottom by footer height */
+}
+  
+/* FOOTER */
+footer {
+	color: #fff;
+	background-color: #222;
+	margin: auto;
+	padding: 20px;
+	width: 100%;
+	position: absolute;
+    bottom: 0;
+	text-align: center;
+}
+
+footer .container a {
+	color: #fff;
+	text-decoration: none;
+}
+
+footer .container a:hover {
+	color: #9e9e9e;
+}

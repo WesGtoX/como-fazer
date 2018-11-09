@@ -25,7 +25,6 @@ const excluir = async(req, res) => {
 // Edit
 const editarForm = async(req, res) => {
     const categoria = await api.get('categorias', req.params.id)
-    console.log(categoria)
     res.render('categorias/editar', {
         categoria
     })

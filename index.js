@@ -5,6 +5,7 @@ const bodyParser = require('body-parser')
 const categorias = require('./routes/categorias')
 const publicacoes = require('./routes/publicacoes')
 
+app.use('/public', express.static('public'))
 app.set('view engine', 'ejs')
 app.use(bodyParser.urlencoded({
     extended: true
