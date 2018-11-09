@@ -1,3 +1,7 @@
+* {
+    font-family: sans-serif;
+}
+
 html {
 	position: relative;
 	min-height: 100%;
@@ -5,6 +9,10 @@ html {
 
 body {
 	margin-bottom: 60px;		/* Margin bottom by footer height */
+}
+
+nav {
+	font-weight: 600;
 }
 
 .bg-light {
