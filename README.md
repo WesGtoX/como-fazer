@@ -1,6 +1,6 @@
 <p align="center">
    <a href="https://github.com/WesGtoX/como-fazer">
-     <img src="public/img/logo.svg" alt="Como Fazer" title="Como Fazer" width="500px">
+     <img src="public/img/logo2.svg" alt="Como Fazer" title="Como Fazer" width="500px">
    </a>
 </p>
 
