@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "builds": [
-    { "src": "nodejs/*.js", "use": "@vercel/node" }
+  "builds":[
+    { "src": "index.js", "use": "@now/node-server" }
   ],
   "env": {
-    "DB_URL": "@como-fazer-db-url",
-    "DB_PASS": "@como-fazer-db-pass"
-  }
+    "DB_URL": "@my-app-db-url",
+    "DB_PASS": "@my-app-db-pass"
+  },
+  "routes":[
+    { "src": "/.*", "dest": "index.js" }
+  ]
 }
