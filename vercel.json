@@ -1,16 +1,9 @@
 {
   "version": 2,
-  "builds":[
-    { "src": "index.js", "use": "@now/node-server" }
-  ],
-
   "build": {
     "env": {
       "DB_URL": "@my-app-db-url",
       "DB_PASS": "@my-app-db-pass"
     }
-  },
-  "routes":[
-    { "src": "/.*", "dest": "index.js" }
-  ]
+  }
 }
