@@ -43,7 +43,7 @@
       "src": "/editar/(?<categoria>[^/]*)/(?<id>[^/]*)",
       "dest": "/publicacoes.js?&categoria=$categoria&id=$id",
       "methods": ["GET", "POST"]
-    },
+    }
   ],
   "env": {
     "DB_URL": "@my-app-db-url",
