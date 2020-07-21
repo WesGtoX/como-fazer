@@ -6,8 +6,5 @@
   "env": {
     "DB_URL": "@my-app-db-url",
     "DB_PASS": "@my-app-db-pass"
-  },
-  "routes":[
-    { "src": "/.*", "dest": "index.js" }
-  ]
+  }
 }
