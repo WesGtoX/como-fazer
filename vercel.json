@@ -1,7 +1,49 @@
 {
   "version": 2,
-  "builds":[
-    { "src": "index.js", "use": "@now/node-server" }
+  "builds": [
+    { "src": "index.js", "use": "@vercel/node-server" }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/index.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/nova",
+      "dest": "/categoria.js",
+      "methods": ["GET", "POST"]
+    },
+    {
+      "src": "/excluir/(?<id>[^/]*)",
+      "dest": "/categoria.js?id=$id",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/editar/(?<id>[^/]*)",
+      "dest": "/categoria.js?id=$id",
+      "methods": ["GET", "POST"]
+    },
+    {
+      "src": "/nova",
+      "dest": "/publicacoes.js",
+      "methods": ["GET", "POST"]
+    },
+    {
+      "src": "/categoria/(?<categoria>[^/]*)",
+      "dest": "/publicacoes.js?categoria=$categoria",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/excluir/(?<categoria>[^/]*)/(?<id>[^/]*)",
+      "dest": "/publicacoes.js?&categoria=$categoria&id=$id",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/editar/(?<categoria>[^/]*)/(?<id>[^/]*)",
+      "dest": "/publicacoes.js?&categoria=$categoria&id=$id",
+      "methods": ["GET", "POST"]
+    },
   ],
   "env": {
     "DB_URL": "@my-app-db-url",
