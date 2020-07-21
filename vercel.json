@@ -1,5 +1,10 @@
 {
-  "version": 2,
+  "alias": [
+    "como-fazer.wesleymendes.com.br", 
+    "www.como-fazer.wesleymendes.com.br",
+    "como-fazer.wesleymends.com.br", 
+    "www.como-fazer.wesleymends.com.br"
+  ],
   "env": {
     "DB_URL": "@my-app-db-url",
     "DB_PASS": "@my-app-db-pass"
